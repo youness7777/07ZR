@@ -55,10 +55,12 @@ body {
 
 }
 .main-content img{
-    width: 616px; /* L'image prend 616px de largeur */
+    width: 50%;
+    /* width: 616px; L'image prend 616px de largeur */
 }
 .content-right{
-    width: 664px; /* La partie à droite prend 616px de largeur */
+    width: 50%;
+    /* width: 664px; La partie à droite prend 616px de largeur */
     display: flex;
     flex-direction: column;
     margin-top: 66px;
@@ -118,6 +120,7 @@ button.btn-warning:hover {
     text-align: center;
     padding-top: 28px;
     padding-bottom: 35px;
+    
 }
 .contact-section i {
     background: #F49A0E 0% 0% no-repeat padding-box;
@@ -196,3 +199,23 @@ button.btn-warning:hover {
 
 
  
+@media(max-width:768px){
+
+    .col-6 {
+        text-align: center;
+        margin:5px auto;
+    }
+
+    .col-12{
+        padding-top: 11.5px;
+        padding-bottom: 4px;
+    }
+   
+    .text-highlight {
+        text-align: center;
+        font: normal normal 900 15px/16px Lato;
+        letter-spacing: 0px;
+        color: #F49A0E;
+    }
+    
+}
