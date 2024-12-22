@@ -26,7 +26,6 @@
 .header-logo p{
     width: 242px;
     height: 15px;
-    /* UI Properties */
     font: italic normal var(--unnamed-font-weight-bold) 9px/11px var(--unnamed-font-family-lato);
     letter-spacing: var(--unnamed-character-spacing-0);
     text-align: center;
@@ -77,7 +76,6 @@ body {
     
 }
 .main-content p{
-    letter-spacing: var(--unnamed-character-spacing-0);
     text-align: left;
     font: normal normal normal 14px/17px Lato;
     letter-spacing: 0px;
@@ -126,11 +124,11 @@ button.btn-warning:hover {
     background: #F49A0E 0% 0% no-repeat padding-box;
     margin-right: 15.23px;
     font-size: 20px;
-    border-radius: 50%;        /* Forme circulaire */
-    width: 31px;               /* Largeur et hauteur égales pour le cercle */
+    border-radius: 50%;        
+    width: 31px;               
     height: 31px;
     color:#000000;
-    display: inline-flex;      /* Pour centrer l'icône */
+    display: inline-flex;      
     align-items: center;
     justify-content: center;
 }
@@ -139,18 +137,20 @@ button.btn-warning:hover {
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
-    margin-bottom: 0; /* Enlève la marge en bas des <p> */
-    padding: 0; /* Enlève tout éventuel padding */
+    margin-bottom: 0; 
+    padding: 0; 
    
     
 }
 .contact-divider{
     margin-top: 47.5px;
     margin-bottom: 32.5px;
-    width: 1050px;
+    width: 100%;
     height: 0px;
     border: 1px solid #707070;
     opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 .footer-part2{
@@ -168,10 +168,12 @@ button.btn-warning:hover {
 .contact-divider2{
     margin-top: 27.5px;
     margin-bottom: 21.5px;
-    width: 1050px;
+    width: 100%;
     height: 0px;
     border: 1px solid #707070;
     opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -194,13 +196,51 @@ button.btn-warning:hover {
     opacity: 1;
 }
 .first-flag {
-    margin-left: 36px !important; /* Ajustez la valeur selon vos besoins */
+    margin-left: 36px !important; 
 }
 
 
  
-@media(max-width:768px){
 
+@media (max-width: 767px) {
+    .main-content {
+        flex-direction: column; 
+        height: auto;
+    }
+    .main-content img {
+        width: 100%; 
+        max-width: 100%;
+        height: auto; 
+    }
+    .content-right {
+        width: 100%; 
+        margin-top: 20px; 
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        padding: 14px; 
+    }
+    .main-content h1{
+        width: 343px;
+        height: 61px;
+        text-align: center;
+        font: normal normal 900 21px/25px Lato;
+        letter-spacing: 0px;
+        color: #373737;
+        opacity: 1;
+    }
+    .content-right p {
+        width: 100%;
+        margin: 0 auto; 
+        padding: 0 15px;
+        text-align: center;
+        letter-spacing: NaNpx;
+        color: #373737;
+        opacity: 1;
+        padding-bottom: 4px;
+    }
     .col-6 {
         text-align: center;
         margin:5px auto;
@@ -217,5 +257,39 @@ button.btn-warning:hover {
         letter-spacing: 0px;
         color: #F49A0E;
     }
+    .social-media-icons i {
+        color:white; 
+        background: #000000 0% 0% no-repeat padding-box;
+        border: 1px solid #F5F5F5;
+        opacity: 1;
+        width: 29px;
+        height: 29px;
+       
+    }
+
+    .first-icon{
+        margin-left: 19px;
+    }
+    .col-12 {
+        width: 100%;
+        text-align: center;
+    }
+
     
+    .footer-part2 {
+        margin-top: 4px;
+    }
+
+    /* Placer le logo au-dessus des autres éléments */
+    .col-md-4.text-center:nth-child(2) {
+        order: -1; /* Déplace le logo en haut */
+    }
+
+    .col-md-4.text-center:nth-child(3) {
+        order: -1; 
+        margin-bottom: 20px;
+    }
+
 }
+
+
