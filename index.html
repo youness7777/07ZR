@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serveurs Indisponibles</title>
-    <link rel="stylesheet" href="07ZR.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">   
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icon-css/css/flag-icon.min.css">
@@ -15,20 +15,30 @@
 
 <body>
     <header class="header-logo">
-       <img  src="Assets/07ZR_logo.png" alt="Logo O7ZR.com">
+       <img  src="public/Assets/07ZR_Logo.png" alt="Logo O7ZR.com">
        <p>La plateforme d'achat des professionnels de l'automobile</p>
     </header>
     <div class="separator-line"></div>
 
-    <main class="main-content">
-        <img src="Assets/main_img.png" alt="Maintenance Image">
-        <div class="content-right">
-            <h1>Nos serveurs sont actuellement indisponibles !</h1>
-            <p>Nos équipes techniques mettent tout en œuvre pour résoudre ce problème au plus vite. Nous sommes désolés pour la gêne occasionnée.</p>
-            <p>Si vous avez besoin d'aide, n'hésitez pas à contacter notre service commercial au <strong>05 16 44 10 17</strong> ou notre service client au <strong>0892 427 007</strong>.</p>
-            <button class="btn btn-warning">Actualiser</button>
+    <main class="main-content container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="img-container">
+                    <img src="public/Assets/main_img.png" alt="Maintenance Image">
+                </div>
+            </div>
+            <div class="col-md-6 content-right">
+               
+                    <h1>Nos serveurs sont actuellement indisponibles !</h1>
+                    <p>Nos équipes techniques mettent tout en œuvre pour résoudre ce problème au plus vite. Nous sommes désolés pour la gêne occasionnée.</p>
+                    <p>Si vous avez besoin d'aide, n'hésitez pas à contacter notre service commercial au <strong>05 16 44 10 17</strong> ou notre service client au <strong>0892 427 007</strong>.</p>
+                    <button class="btn btn-warning">Actualiser</button>
+                
+            </div>
         </div>
     </main>
+    
+    
     <footer class="contact-section">
         <div class="container">
             <div class="row">
@@ -38,15 +48,20 @@
                 </div> 
             </div>
             <p><strong>CONTACTEZ-NOUS</strong></p>
-            <div class="row">
+            <div class="row mx-auto">
                 <div class="col-md-3 text-center d-none d-md-block">
                     <p><i class="fa-solid fa-fax fa-beat"></i>00 41 22 59 48 116</p>  
                 </div>
-                <div class="col-md-3 col-6 text-center">
-                    <p><i class="fa-solid fa-phone fa-beat"></i>0892 427 007</p>  
+                <div class="col-md-3 col-6 d-flex justify-content-center align-items-center ">
+                    <i class="fa-solid fa-phone fa-beat"></i>
+                    <div>
+                        <p>0892 427 007</p>
+                        <p class="call-price d-none d-md-block">(00,35 €/min)</p>
+                    </div>  
                 </div>
-                <div class="col-md-3 col-6 text-center">
-                    <p><i class="fas fa-envelope fa-beat"></i>contact@07ZR.com</p>
+                <div class="col-md-3 col-6 d-flex justify-content-center align-items-center m-auto">
+                    <i class="fas fa-envelope fa-beat"></i>
+                    <p>contact@0.com</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <p>Lundi - Vendredi</p>
@@ -62,7 +77,7 @@
                     <p class="footer-part2">Conditions d'utilisation</p>
                 </div>
                 <div class="col-md-4 col-12 text-center">
-                    <img  src="Assets/07ZR_logo.png" alt="Logo O7ZR.com">
+                    <img  src="public/Assets/07ZR_logo.png" alt="Logo O7ZR.com">
                     <p>La plateforme d'achat des professionnels de l'automobile</p>  
                 </div>
                 <div class="col-md-4 col-6 text-center">
@@ -84,29 +99,21 @@
             </div>
             <div class="contact-divider2"></div>
 
-            <div class="row">
-                
+            <div class="row d-flex justify-content-between align-items-center">
                 <div class="col-md-5 text-center">
-                    <p><img src="Assets/footer-logo.PNG" class="footer-logo" alt="footer logo">est une marque enregistrée © Copyright2020 - Plan du site</p>
-                    
+                    <p><img src="public/Assets/footer-logo.PNG" class="footer-logo" alt="footer logo"> est une marque enregistrée © Copyright 2020 - Plan du site</p>
                 </div>
-                <div class="col-md-3 text-center d-none d-md-block">
-                   
-                </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-5 text-center">
                     <p>Présenté par :
-                    <span class="first-flag"><img class="flag" src="Assets/flags/france.png" alt="France"></span> 
-                    <span><img class="flag" src="Assets/flags/spain.png" alt="Espagne"></span> 
-                    <span><img class="flag" src="Assets/flags/italy.png" alt="Italie"></span> 
-                    <span><img class="flag" src="Assets/flags/germany.png" alt="Allemagne"></span> 
-                    <span><img class="flag" src="Assets/flags/austria.png" alt="Autriche"></span> 
-                    <span><img class="flag" src="Assets/flags/portugal.png" alt="Portugal"></span> 
-                    <span><img class="flag" src="Assets/flags/poland.png" alt="Pologne"></span>
-                </p> 
+                        <span class="first-flag"><img class="flag" src="public/Assets/flags/france.png" alt="France"></span>
+                        <span><img class="flag" src="public/Assets/flags/spain.png" alt="Espagne"></span>
+                        <span><img class="flag" src="public/Assets/flags/italy.png" alt="Italie"></span>
+                        <span><img class="flag" src="public/Assets/flags/germany.png" alt="Allemagne"></span>
+                        <span><img class="flag" src="public/Assets/flags/austria.png" alt="Autriche"></span>
+                        <span><img class="flag" src="public/Assets/flags/portugal.png" alt="Portugal"></span>
+                        <span><img class="flag" src="public/Assets/flags/poland.png" alt="Pologne"></span>
+                    </p>
                 </div>
-                   
-                
-
             </div>
            
         </div>
